@@ -1,0 +1,16 @@
+name: squid-deb-proxy
+summary: Squid proxy configuration to optimize package downloads
+maintainer: Charles Butler <charles@Bushido>
+description: |
+  This package contains a Squid proxy configuration to manage a cache of
+  .deb downloads, with optimizations for the types of file present in
+  package repositories, and using a dedicated directory and port.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://juju.ubuntu.com/docs/authors-charm-metadata.html#charm-metadata
+  - misc
+subordinate: false
+provides:
+  proxy:
+    interface: deb-cache
+
